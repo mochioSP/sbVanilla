@@ -1,10 +1,18 @@
-import "./styles.css";
+/**
+ * constとlet等の変数宣言
+ */
+// var val1 = "var変数";
+// console.log(val1);
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+// const val4 = {
+//   name: "mochi",
+//   age: 28
+// };
+// val4.name = "japan";
+// val4.adress = "america";
+// console.log(val4);
+
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey")
+// console.log(val5)
