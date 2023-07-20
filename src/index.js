@@ -40,18 +40,43 @@
  */
 //従来の関数の書き方
 //
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です。"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です。"));
 
-//アロー関数で書いてみる
-const func2 = (str) => {
-  return str;
-};
-console.log(func2("func2です。"));
+// //アロー関数で書いてみる
+// const func2 = (str) => {
+//   return str;
+// };
+// console.log(func2("func2です。"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-console.log(func3(10, 20));
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func3(10, 20));
+
+/**
+ * 分割代入
+ */
+// const myProfile = {
+//   name: "yamada",
+//   age: "33"
+// };
+
+// const message1 = `私は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+// const {name, age} = myProfile;
+// const message2 = `私は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+//分割代入は配列でも使える
+const myProfile = ["tanaka", 50];
+
+const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `私の名前は${name}です。年齢は${age}歳です。`;
+console.log(message4);
