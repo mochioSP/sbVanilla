@@ -72,11 +72,17 @@
 // console.log(message2);
 
 //分割代入は配列でも使える
-const myProfile = ["tanaka", 50];
+// const myProfile = ["tanaka", 50];
 
-const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
-console.log(message3);
+// const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message3);
 
-const [name, age] = myProfile;
-const message4 = `私の名前は${name}です。年齢は${age}歳です。`;
-console.log(message4);
+// const [name, age] = myProfile;
+// const message4 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message4);
+
+/**
+ * デフォルト値、引数について
+ */
+const sayHello = (name = 'ゲスト') => console.log(`こんにちは${name}さん！`);
+sayHello('nishino');
